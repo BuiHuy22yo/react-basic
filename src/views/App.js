@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import {MyComponent, MyComponent2 }from "./example/MyComponent";
 
 function App() {
   return (
@@ -18,9 +19,8 @@ function App() {
           Hoc react co ban
         </a>
       </header>
-      <footer>
-        test
-      </footer>
+      <MyComponent></MyComponent>
+        <MyComponent2></MyComponent2>
     </div>
   );
 }
