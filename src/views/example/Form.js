@@ -7,9 +7,9 @@ class Form extends React.Component {
         firstName: '',
         lastName: "",
         arrjobs: [
-            { id : 'aaajob1' , title : 'dev' , salary : '500$'},
-            { id : 'aaajob12' , title : 'testter' , salary : '600$'},
-            { id : 'aaajob13' , title : 'PM' , salary : '1500$'}
+            { id : 'aaajob1' , title : 'dev' , salary : '500'},
+            { id : 'aaajob12' , title : 'testter' , salary : '600'},
+            { id : 'aaajob13' , title : 'PM' , salary : '1500'}
         ]
     }
 
