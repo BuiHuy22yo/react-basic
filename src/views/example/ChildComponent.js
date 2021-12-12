@@ -14,7 +14,10 @@ state = {
         showJobs : !this.state.showJobs
     })
     }
-
+    handleDelete = (job) => {
+        console.log('a',job)
+        this.props.deleteAJob(job)
+    }
     render() {
         console.log(this.state)
         let {arrjobs} = this.props
@@ -31,6 +34,7 @@ state = {
                                     return (
                                         <div key={item.id}>
                                             {item.title} = {item.salary}
+                                            <></> <span onClick={() => this.handleDelete(item)}>x</span>
                                         </div>
                                     )
                                 })
