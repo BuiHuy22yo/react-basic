@@ -11,11 +11,18 @@ class Form extends React.Component {
         ]
     }
 
+    addNewJob = (job) => {
+        console.log('check parrent', job)
+         this.setState({
+             arrjobs: [...this.state.arrjobs, job]
+         })
+    }
+
     render() {
         //console.log(this.state)
         return (
             <>
-               <AddComponent></AddComponent>
+               <AddComponent addNewJob={this.addNewJob} ></AddComponent>
                 <ChildComponent arrjobs={this.state.arrjobs}/>
             </>
         )

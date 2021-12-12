@@ -22,7 +22,19 @@ class AddComponent extends React.Component {
 
     handleOnClick = (event) => {
         event.preventDefault()
-        console.log(this.state)
+        if(!this.state.titlejob || !this.state.salary){
+            alert("required");
+            return;
+        }
+       this.props.addNewJob({
+           id:Math.floor(Math.random()*1000),
+           title: this.state.titlejob,
+           salary: this.state.salary
+       })
+        this.setState({
+            titlejob: '',
+            salary:'',
+        })
     }
 
     render() {
