@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './demo.scss';
 /*
 * class component
 * */
@@ -25,7 +25,7 @@ state = {
         return (
             <>
                 {showJobs === false ?
-                    <div><button onClick={(event) => this.handleShowHide(event)}>show</button></div>
+                    <div><button  className="bnt_show" onClick={(event) => this.handleShowHide(event)}>show</button></div>
                 :
                     <>
                         <div className="job-lists">
@@ -40,7 +40,7 @@ state = {
                                 })
                             }
                         </div>
-                        <div><button onClick={(event) => this.handleShowHide(event)}>hide</button></div>
+                        <div><button className="bnt_show" onClick={(event) => this.handleShowHide(event)}>hide</button></div>
                     </>
                 }
             </>
