@@ -1,0 +1,25 @@
+.list-todo-container {
+  width:400px;
+  .add-todo {
+    .add {
+      margin: 0 10px;
+    }
+  }
+
+  .list-todo-content {
+    .todo-child {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 2px solid #b3abab;
+      .Edit{
+        margin: 0 10px;
+      }
+    }
+
+  }
+
+}
+button {
+  cursor: pointer;
+}
