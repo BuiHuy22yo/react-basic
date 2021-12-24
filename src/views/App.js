@@ -30,7 +30,7 @@ function App() {
                             <ListTodo/>
                         </Route>
                         <Route path="/about">
-                            <MyComponent/>
+                            <Form/>
                         </Route>
                     </Switch>
 
