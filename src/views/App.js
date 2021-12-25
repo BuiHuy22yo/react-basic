@@ -14,6 +14,8 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
+import ListUser from "./Users/ListUser";
 function App() {
     return (
         <BrowserRouter>
@@ -31,6 +33,9 @@ function App() {
                         </Route>
                         <Route path="/about">
                             <Form/>
+                        </Route>
+                        <Route path="/user">
+                            <ListUser/>
                         </Route>
                     </Switch>
 

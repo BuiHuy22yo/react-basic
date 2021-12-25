@@ -1,0 +1,15 @@
+.list-user-container {
+  width: 400px;
+  margin: 0 auto;
+  .list-user-content {
+    border: 1px solid #fff;
+    .user-item {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 10px 0;
+    }
+    .user-item:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
