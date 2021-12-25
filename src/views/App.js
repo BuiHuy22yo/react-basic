@@ -16,6 +16,7 @@ import {
 } from "react-router-dom";
 
 import ListUser from "./Users/ListUser";
+import DetailUser from "./Users/DetailUser";
 function App() {
     return (
         <BrowserRouter>
@@ -34,8 +35,11 @@ function App() {
                         <Route path="/about">
                             <Form/>
                         </Route>
-                        <Route path="/user">
+                        <Route path="/user" exact={true}>
                             <ListUser/>
+                        </Route>
+                        <Route path="/user/:id">
+                            <DetailUser/>
                         </Route>
                     </Switch>
 
